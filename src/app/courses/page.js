@@ -1,22 +1,39 @@
 "use client";
-import Link from "next/link";
+
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+import "./courses.css";
+import { courses } from "@/constants/courses";
 import Layout from "../components/layout";
 
 export default function Courses() {
-  const courses = [
-    { id: 1, title: "React Basics" },
-    { id: 2, title: "Advanced JavaScript" },
-  ];
+  const router = useRouter();
+  const [clickedId, setClickedId] = useState(null);
+
+  const handleCardClick = (id) => {
+    setClickedId(id);
+    setTimeout(() => {
+      router.push(`/courses/${id}`);
+    }, 400);
+  };
+
   return (
     <Layout>
-      <h1>Courses</h1>
-      <ul>
-        {courses.map((course) => (
-          <li key={course.id}>
-            <Link href={`/courses/${course.id}`}>{course.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <section className="courses-container">
+        <h1 className="courses-title">Explore Our Courses</h1>
+        <div className="courses-grid">
+          {courses.map(({ id, title, description, gradient }) => (
+            <div key={id} className={`card-wrapper ${gradient} ${clickedId === id ? "expand-card" : ""}`} onClick={() => handleCardClick(id)}>
+              <div className="card-inner">
+                <h2 className="course-title">{title}</h2>
+                <p className="course-description">{description}</p>
+                <span className="course-link">View Details →</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }

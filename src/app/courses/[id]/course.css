@@ -1,0 +1,151 @@
+/* Hero Header */
+.course-hero {
+    padding: 4rem 2rem;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fef9c3;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff9c4;
+}
+
+.stars {
+    font-size: 1.2rem;
+}
+
+.reviews {
+    font-size: 0.9rem;
+    color: #e5e5e5;
+}
+
+.enroll-btn {
+    background-color: #fff;
+    color: #3d550c;
+    font-weight: 600;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+    background-color: #f4e96c;
+}
+
+/* Body Section */
+.course-body {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+}
+
+.course-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3d550c;
+}
+
+.course-body p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.course-points {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.course-points li {
+    padding: 0.5rem 0;
+    font-size: 1.05rem;
+    color: #374151;
+}
+
+.comments blockquote {
+    background-color: #f9f9f9;
+    border-left: 4px solid #cf9b00;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    border-radius: 0.5rem;
+}
+
+.comments blockquote span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #3d550c;
+}
+
+/* Gradients from courses.css */
+.bg1 {
+    background: linear-gradient(135deg, #3d550c, #ffc30f);
+}
+
+.bg2 {
+    background: linear-gradient(135deg, #fff0ac, #3d550c);
+}
+
+.bg3 {
+    background: linear-gradient(135deg, #3d550c, #cf9b00);
+}
+
+.bg4 {
+    background: linear-gradient(135deg, #facc15, #3d550c);
+}
+
+.back-wrapper {
+    position: absolute;
+    padding: 1rem 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-button {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #cf9b00;
+    text-decoration: none;
+}

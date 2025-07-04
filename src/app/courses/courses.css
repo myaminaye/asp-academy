@@ -1,0 +1,91 @@
+.courses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.courses-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    background: #3d550c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* Outer card wrapper with gradient border effect */
+.card-wrapper {
+    display: block;
+    padding: 2px;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner content inside white box */
+.card-inner {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Course content */
+.course-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #cf9b00;
+}
+
+.course-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.course-link {
+    color: #3d550c;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Gradient Backgrounds */
+.bg1 {
+    background: linear-gradient(135deg, #3d550c, #ffc30f);
+}
+
+.bg2 {
+    background: linear-gradient(135deg, #fff0ac, #3d550c);
+}
+
+.bg3 {
+    background: linear-gradient(135deg, #3d550c, #cf9b00);
+}
+
+.bg4 {
+    background: linear-gradient(135deg, #facc15, #3d550c);
+}
+
+/* Animate card expand when clicked */
+.expand-card {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+    position: relative;
+}
