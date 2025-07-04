@@ -1,0 +1,115 @@
+.page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* #2ba126 = green */
+/* #d3efd7 = light green */
+/* #3d550c = dark green */
+/* #ffc30f = yellow */
+/* #fff0ac = light yellow */
+/* #cf9b00 = dark yellow */
+
+/* #eff8e0 = pale white green */
+
+.section {
+  background: #eff8e0;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 2rem 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3d550c;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #cf9b00;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.logoImage {
+  width: 150px;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.button {
+  background-color: #2ba126;
+  color: #eff8e0;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem auto;
+  display: block;
+}
+
+.button:hover {
+  background-color: #ffc30f;
+}
+
+.button a {
+  color: #eff8e0;
+  text-decoration: none;
+}
+
+.courses {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.course {
+  background-color: #fff0ac;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(42, 46, 116, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.course:hover {
+  transform: scale(1.03);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.review {
+  background-color: #fffbe6;
+  padding: 1rem;
+  border-left: 5px solid #ffcc00;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
