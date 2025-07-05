@@ -1,0 +1,160 @@
+/* Hero & General */
+.about-wrapper {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #3d550c, #ffc30f);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fef9c3;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #3d550c;
+}
+
+.about-section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.highlight {
+    background-color: #fffef3;
+    border-left: 5px solid #cf9b00;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.about-points {
+    list-style: none;
+    padding: 0;
+}
+
+.about-points li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-points li::before {
+    content: "✔";
+    color: #cf9b00;
+    position: absolute;
+    left: 0;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid #cf9b00;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #cf9b00;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #3d550c;
+}
+
+.timeline-content p {
+    margin: 0.3rem 0 0;
+    color: #374151;
+}
+
+/* Team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-card h4 {
+    margin: 0;
+    color: #3d550c;
+}
+
+.team-card .role {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+}
+
+/* FAQs */
+.faq details {
+    margin-bottom: 1rem;
+    background: #fefce8;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    border-left: 4px solid #cf9b00;
+    cursor: pointer;
+}
+
+.faq summary {
+    font-weight: 600;
+    color: #3d550c;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.faq p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
