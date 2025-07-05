@@ -2,6 +2,7 @@ import { courses } from "@/constants/courses";
 import "./course.css";
 import Link from "next/link";
 import Layout from "@/app/components/layout";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 export default function CourseDetail({ params }) {
   const courseId = parseInt(params.id);
@@ -15,7 +16,7 @@ export default function CourseDetail({ params }) {
         <header className={`course-hero ${course.gradient}`}>
           <div className="back-wrapper">
             <Link href="/courses" className="back-button">
-              ← Back to Courses
+              <IoMdArrowRoundBack />
             </Link>
           </div>
           <div className="hero-content">

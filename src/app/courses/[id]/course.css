@@ -131,21 +131,32 @@
 
 .back-wrapper {
     position: absolute;
-    padding: 1rem 2rem 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    top: 5rem;
+        left: 1rem;
+        z-index: 10;
 }
 
 .back-button {
     display: inline-block;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #fff;
+    font-size: 1rem;
+        font-weight: 500;
+        color: #e3e3e3;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-    color: #cf9b00;
-    text-decoration: none;
+color: #cf9b00;
+    @media (max-width: 640px) {
+            .back-wrapper {
+                top: 5rem;
+                left: 0.5rem;
+            }
+    
+            .back-button {
+                font-size: 1.5rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
 }
